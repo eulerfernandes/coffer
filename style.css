@@ -1,9 +1,8 @@
 :root {
-    --main-color: #d3ad7f
-    --black: #13131a;
+    --main-color: #d3ad7f --black: #13131a;
     --bg: #010103;
-    --white: #fff
-    --border: 0.1rem solid rgba(255,255,255,0.3);
+    --white: #fff;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
     font-size: 10px;
 }
 
@@ -19,7 +18,7 @@
 }
 
 body {
-    background-color: var(--bg);
+    background-color: black;
 }
 
 section {
@@ -35,7 +34,7 @@ section {
     right: 0;
     z-index: 99;
     border-bottom: var(--border);
-    background-color: var(--bg);
+    background-color: rgb(20, 15, 1);
 }
 
 .header section {
@@ -53,10 +52,10 @@ section {
 }
 
 .navbar a:hover {
-    color: rgba(65, 45, 4, 0.756);
+    color: rgb(20, 15, 1);
     border-bottom: 0.1rem solid;
     padding-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 
@@ -88,7 +87,7 @@ section {
 
 
 .home-container {
-    background: url("./img/home-img.jpg");
+    background: url("./img/contemporary-coffee-shop-with-modern-elegance-design-generative-ai222.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -110,8 +109,8 @@ section {
 }
 
 .content h3:hover {
-   transition: 0.2s linear;
-   color: rgba(73, 60, 33, 0.756);
+    transition: 0.2s linear;
+    color: rgba(116, 109, 96, 0.756);
 }
 
 .content p {
@@ -136,6 +135,7 @@ section {
 
 }
 
+
 .about .row {
     display: flex;
     align-items: center;
@@ -158,4 +158,102 @@ section {
     color: #fff;
     padding: 1rem 0;
     line-height: 1.8;
+}
+
+.box-continer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-continer .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+.menu .box-continer .box img {
+    height: 10rem;
+}
+
+.menu .box-continer .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-continer .box .price {
+    color: #fff;
+    font-size: 2rem;
+    padding: 0, 5rem 0;
+}
+
+.menu .box-continer .box span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-continer .box:hover {
+    background-color: #fff;
+
+}
+
+.menu .box-continer .box:hover>* {
+    color: #010103;
+}
+
+
+.review .box-continer .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-continer .box p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.review .box-continer .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.review .box-continer .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.footer {
+    text-align: center;
+
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer .share img:hover {
+    background-color: rgba(77, 52, 4, 0.756);
 }
